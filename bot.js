@@ -212,7 +212,7 @@ client.on('message' , message => {
     let messageArray = message.content.split(" ");
     let cmd = messageArray[0];
     let args = messageArray.slice(1);
-    let prefix = 'D';
+    let prefix = '-';
 
 if(cmd === `${prefix}sug`) {
     var suggestMessage = message.content.substring(8)
@@ -394,7 +394,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content.startsWith('Dplay')) {
-    msg.channel.send('Use >play');
+    msg.channel.send('Use Dplay');
   }
 });
 
@@ -403,7 +403,7 @@ client.on('guildCreate', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("RED")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=531032213605580800&scope=bot&permissions=3525696')
+     .setURL('https://discordapp.com/oauth2/authorize?client_id=531032213605580800&permissions=8&scope=bot')
   .setDescription(`**
   New Server Add ShaherAhly2005 ✅
 Server name: __${guild.name}__
@@ -417,7 +417,7 @@ client.on('guildDelete', guild => {
          const embed = new Discord.RichEmbed()
      .setColor("GOLD")
      .setTitle('Click Here To Add Bot .!')
-     .setURL('https://discordapp.com/oauth2/authorize?client_id=531032213605580800&scope=bot&permissions=3525696')
+     .setURL('https://discordapp.com/oauth2/authorize?client_id=531032213605580800&permissions=8&scope=bot')
   .setDescription(`**
    Server kicked ShaherAhly2005 :cry:
 Server name: __${guild.name}__
@@ -614,7 +614,7 @@ function play(guild, song) {
 
 	serverQueue.textChannel.send(`بدء تشغيل : **${song.title}**`);
 }
-const adminprefix = "-v";
+const adminprefix = "Dv";
 const devs = ['349616310734553088','335027415619338240'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
@@ -666,7 +666,7 @@ message.channel.sendEmbed(cat);
 
 client.on('message', message => {
      if(!message.channel.guild) return;
-var prefix = "H";
+var prefix = "-";
                 if(message.content.startsWith(prefix + 'allbots')) {
 
     
@@ -688,7 +688,7 @@ message.channel.send(embed)
 
 
 client.on("message", function(message) {
-	var prefix = "D";
+	var prefix = "-";
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
     let messageRPS = message.content.split(" ").slice(2).join(" ");
@@ -760,7 +760,7 @@ client.on('message', message => {
             .setAuthor(client.user.username,client.user.avatarURL)
             .setThumbnail(client.user.avatarURL)
             .setColor('RANDOM')
-            .setTitle('``INFO ShaherAhly2005`` ')
+            .setTitle('``INFO Speed Bot`` ')
             .addField('``My Ping``' , [`${Date.now() - message.createdTimestamp}` + 'MS'], true)
             .addField('``RAM Usage``', `[${(process.memoryUsage().rss / 1048576).toFixed()}MB]`, true)
             .addField('``servers``', [client.guilds.size], true)
@@ -770,7 +770,7 @@ client.on('message', message => {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ - ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | ShaherAhly2005')
+			      .setFooter('By | Elmusaui_GK and Speed')
     })
 }
 });
@@ -827,7 +827,7 @@ message.react("❌")
 
  client.on('message', message => {
               if (!message.channel.guild) return;
-      if(message.content =='Hcount')
+      if(message.content =='-count')
       var IzRo = new Discord.RichEmbed()
       .setThumbnail(message.author.avatarURL)
       .setFooter(message.author.username, message.author.avatarURL)
@@ -1221,7 +1221,7 @@ if (!points[message.author.id]) points[message.author.id] = {
     points: 0,
   };
   if(!message.guild) return;
-    let id = message.author.id,prefix="D";
+    let id = message.author.id,prefix="-";
     if (spee[id] && (new Date).getTime() - spee[id] < 15*1000) {
         let r = (new Date).getTime() - spee[id];
         r = 15*1000 - r;
@@ -1426,7 +1426,7 @@ let prefix = 'D'
 });
 
 client.on('message',function(message) {
-	let prefix = "D";
+	let prefix = "-";
 let args = message.content.split(" ").slice(1).join(" ");
 if(message.content.startsWith(prefix + "say")) {
 if(!args) return;
@@ -1743,7 +1743,7 @@ client.on('message', message => {
        });
 
 client.on('message', message => {
-if(message.content.startsWith("-slots")) {
+if(message.content.startsWith("Dslots")) {
   let slot1 = ['🍏', '🍇', '🍒', '🍍', '🍅', '🍆', '🍑', '🍓'];
   let slots1 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
   let slots2 = `${slot1[Math.floor(Math.random() * slot1.length)]}`;
@@ -1861,7 +1861,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-var prefix = "D";
+var prefix = "-";
        if(message.content === prefix + "mutechannel") {
                            if(!message.channel.guild) return message.reply('** This command only for servers**');
 
@@ -1932,14 +1932,14 @@ client.on('message', message => {
         let embed = new Discord.RichEmbed()
         .setAuthor(` ${message.author.username} `, message.author.avatarURL)      
         .setTitle(`➡ Click Here `)
-        .setURL(`https://discordapp.com/oauth2/authorize?client_id=531032213605580800&permissions=8&scope=bot`)
-        .setThumbnail(" https://cdn.discordapp.com/attachments/530149590385688577/531034347864588289/Dragon_Shop.png")        
+        .setURL(`https://discordapp.com/oauth2/authorize?client_id=400489866573512705&permissions=8&scope=bot`)
+        .setThumbnail(" https://cdn.discordapp.com/avatars/377904849783750667/6c76e412f18c142dfd711d05fb363869.png?size=2048")        
      message.channel.sendEmbed(embed);
        }
    });
  
 client.on('message', message => {
-    if (message.content.startsWith("Havatar")) {
+    if (message.content.startsWith("Davatar")) {
 if(!message.channel.guild) return;
         var mentionned = message.mentions.users.first();
     var client;
@@ -1977,11 +1977,11 @@ client.on('message', message => {
 
 
    client.on('message', message => {
-     if (message.content === "Dsupport") {
+     if (message.content === "-support") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
-  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/wcMcPek**")
+  .addField(" ** :gear: Server Support :gear: **" , "  **https://discord.gg/htNpU3J**")
      
      
   message.channel.sendEmbed(embed);
@@ -2111,13 +2111,14 @@ client.on("message", message => {
     }
 });
 
-// THIS  MUST  BE  THIS  WAY
 
 client.on('ready', ready => {
-client.user.setGame(`Dhelp|DragonShop`,`https://twitch.tv/ichbinxirdx`)
+client.user.setGame(`Dhelp|Dragon Shop`,`https://twitch.tv/ichbinxirdx`)
 });
 
 
 
 
+
+// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
